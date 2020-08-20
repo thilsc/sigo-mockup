@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SiGO - Sistema de Gestão de Orçamento</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Meterial Icon CSS -->
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <!-- Material CSS -->
+    <link rel="stylesheet" href="assets/css/material.min.css">
+    <!-- Ripples CSS -->
+    <link rel="stylesheet" href="assets/css/ripples.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Slicknav CSS -->
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+ 
+    
+    <!-- Color CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/indigo.css" media="screen" />
+
+  </head>
+  <body>
+
+    <!-- Header Start -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar nav-bg">
+        <div class="container">            
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="mdi mdi-menu"></span>
+              <span class="mdi mdi-menu"></span>
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Nova Proposta
+                </a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cadastros
+                </a>
+                <div class="dropdown-menu">
+					<a class="dropdown-item active" href="#">Clientes</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultas</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Clientes</a>
+				  <a class="dropdown-item" href="#">Propostas</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administração</a>
+                <div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Atualizar Planilha</a>
+					<a class="dropdown-item" href="#">Configurações</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile Menu Start -->
+          <ul class="wpb-mobile-menu">
+            <li><a href="#">Nova Proposta</a></li>
+            <li><a href="#">Cadastros</a>
+				<ul class="dropdown"><li><a href="#">Clientes</a></li></ul>
+            </li>
+            <li><a href="#">Consultas</a>
+				<ul class="dropdown"><li><a href="#">Clientes</a></li><li><a href="#">Propostas</a></li></ul>
+            </li>
+            <li><a href="#">Administração</a>
+				<ul class="dropdown">
+					<li><a href="#">Atualizar Planilha</a></li>
+					<li><a href="#">Configurações</a></li>
+				</ul>
+            </li>
+          </ul>
+          <!-- Mobile Menu End -->
+      </nav>
+    </header>
+    <!-- Header End --> 
+      
+    <!-- Page Titile Area -->
+    <section class="page-title-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-center">
+                        <div class="title-middle">
+                            <h2 class="page-tagline">Sistema de Gestão de</h2>
+                            <h1 class="page-title">Orçamento</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Titile Area End -->
+
+	<section class="Material-contact-section section-padding section-dark">
+        <div class="container">
+            <div class="row">
+				<h2>Dados do Cliente</h2><hr>
+				<div class="col-md-12">	
+					<form>
+						<div class="form-group row">
+							<label for="numPedido" class="col-sm-2 col-form-label">Pedido Nº</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="numPedido" placeholder="2020817829" readonly>
+							</div>
+						</div>
+						<div class="form-group row">
+								<label for="nomeCliente" class="col-sm-2 col-form-label">Cliente</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control-plaintext" id="nomeCliente" value="CLIENTE EXEMPLO EIRELI - 46.480.297/0001-30" style="width: inherit;" readonly>
+							</div>
+
+							<label for="enderecoCliente" class="col-sm-2 col-form-label">Endereço</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control-plaintext" id="enderecoCliente" value="R. Sovi, 851 - Parque Industrial, Arapongas - PR, 86706-570" style="width: inherit;" readonly>
+							</div>
+							
+								<label for="valorPotencia" class="col-sm-2 col-form-label">Potência (kwp)</label>
+								<input type="text" class="col-sm-3 form-control-plaintext" id="valorPotencia" value="8,28" style="width: fit-content;">
+								<button class="col-sm-3 btn btn-common" style="pointer-events: all;cursor: pointer;">Atualizar Potência<i class="material-icons mdi mdi-refresh"></i><div class="ripple-container"></div></button>
+
+						</div>
+
+					</form>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="Material-contact-section section-padding section-dark">
+        <div class="container">
+			<h2>Itens do Pedido</h2><hr>
+            <div class="row">
+				<div class="col-md-12">				
+					<button class="btn btn-common" style="pointer-events: all;cursor: pointer;margin-top: 0px;margin-bottom: 15px;"><i class="material-icons mdi mdi-plus" ></i>Adicionar Item<div class="ripple-container"></div></button>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-6 col-lg-12 col-xl-12">
+					<table class="table">
+					<thead class="thead-dark">
+					<tr>
+					<th scope="col" width="5%">Cód.Fabricante</th>
+					<th scope="col" width="40%">Descrição</th>
+					<th scope="col" width="5%">Item</th>
+					<th scope="col" width="5%">Qtd.Sugerida</th>
+					<th scope="col" width="5%">Quantidade</th>
+					<th scope="col">		
+					</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr><th scope="row">1870649</th><td>Módulo Fotovoltaico 345W EMSZ -345P DG</td><td>PC</td><td></td><td align="right">24,0000</td>						<td>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-pencil" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-delete" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						</td></tr>
+						<tr><th scope="row">1870515</th><td>Inversor On Grid 8,0kW EGT 8000 PRO</td><td>PC</td></td><td><td align="right">1,0000</td>						<td>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-pencil" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-delete" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						</td></tr>
+						<tr><th scope="row">1870491</th><td>Conector p/Cabo MC4 Par FM/MC 1Via 1,5kV 45A</td><td>PAR</td><td align="right">4,0000</td><td align="right">4,0000</td>						<td>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-pencil" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-delete" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						</td></tr>
+						<tr><th scope="row">4825035</th><td>Cabo Solar Preto 1,8 kV ECS 6B (m)</td><td>M</td><td align="right">75,0000</td><td align="right">50,0000</td>						<td>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-pencil" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-delete" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						</td></tr>
+						<tr><th scope="row">4825036</th><td>Cabo Solar Vermelho 1,8 kV ECS 6R (m)</td><td>M</td><td align="right">75,0000</td><td align="right">50,0000</td>						<td>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-pencil" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-delete" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						</td></tr>
+						<tr><th scope="row">160621 </th><td>KIT DE FIXACAO PARA TELHA COLONIAL – 4 PLACAS.<br>2 BARRAS DE PERFIL ALUMINIO TRILHO H COM 4,20 MT;<br>8 SUPORTE DE FIXACAO (CANTONEIRA COM FURO REDONDO E QUADRADO);<br>8 GANCHOS Z;<br>8 GANCHOS L COM PARAFUSO MARTELO 10X30;<br>6 GRAMPOS INTERMEDIARIOS;<br>4 GRAMPOS FINAIS.</td><td>PC</td><td align="right">6,0000</td><td align="right">6,0000</td>					
+						<td>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-pencil" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						<button class="btn btn-common" style="pointer-events: all;cursor: pointer;width: 22px;height: 30px;margin-top: 0px;margin-bottom: 0px;"><i class="material-icons mdi mdi-delete" style="position: absolute; top: 4px; left: 10px; "></i><div class="ripple-container"></div></button>
+						</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only  pt-0 footer-widget-container">
+      <!--Footer Links-->
+      <div class="container pt-5 mb-5">
+        <div class="row">
+          <!--First+Second column-->
+		<div class="col-md-12 col-lg-6 col-xl-6 link-widget">
+			<h3 class="footer-title">Resumo</h3>
+            <p>Quantidade de Itens: 06</p>
+            <p>Valor Frete: R$ 0,00</p>
+			<p>Total Proposta: R$ 23.730,00</p>
+		</div>
+		  <!--/.First+Second column-->
+
+          <!--Third column--><div class="col-md-6 col-lg-3 col-xl-3 footer-contact-widget"></div><!--/.Third column-->
+
+          <!--Fourth column-->
+          <div class="col-md-6 col-lg-3 col-xl-3 footer-contact">
+              <h3 class="footer-title">Ações</h3>
+              <div class="widget widget-gallery">
+                <a href="#"><button class="btn btn-common" type="submit" id="form-submit" style="pointer-events: all; cursor: pointer;"><i class="material-icons mdi mdi-check"></i> Gravar<div class="ripple-container"></div></button></a>
+				<a href="#"><button class="btn btn-common" type="submit" id="form-submit" style="pointer-events: all; cursor: pointer;"><i class="material-icons mdi mdi-email"></i> Enviar Proposta<div class="ripple-container"></div></button></a>
+                </ul>
+              </div>              
+          </div>
+          <!--/.Fourth column-->
+
+        </div>
+      </div>
+      <!--/.Footer Links-->
+
+      <!-- Copyright-->
+      <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; SiGO - Sistema de Gestão de Orçamento</p>
+                </div>
+            </div>
+          </div>     
+      </div>
+      <!--/.Copyright -->
+        
+    </footer>
+    <!--/.Footer-->
+                    
+
+    <!-- Back To Top -->
+    <a href="#" class="back-to-top">
+      <div class="ripple-container"></div>
+      <i class="mdi mdi-arrow-up">
+      </i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+ 
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/jquery.inview.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/scroll-top.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/material.min.js"></script>
+    <script src="assets/js/ripples.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.vide.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
